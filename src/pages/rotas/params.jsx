@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Link from 'next/link';
 
 const Params = () => {
 
@@ -16,6 +17,11 @@ const Params = () => {
             <h2>
                 Nome: {name}
             </h2>
+            <Link href="/rotas">
+                <button>
+                    voltar
+                </button>
+            </Link>
         </>
     )
 }
