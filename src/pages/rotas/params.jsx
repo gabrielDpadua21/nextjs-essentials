@@ -9,7 +9,7 @@ const Params = () => {
     return (
         <>
             <h1>
-                Rota Params
+                Rota teste 2
             </h1>
             <h2>
                 Id: {id}
