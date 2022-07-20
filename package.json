@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "stage": "next lint && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
