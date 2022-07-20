@@ -11,7 +11,7 @@ const Rotas = () => {
             <h1>
                 rotas / {query.id} / search
             </h1>
-            <Link passHref="/rotas">
+            <Link passHref href="/rotas">
                 <button>
                     voltar
                 </button>
