@@ -17,7 +17,7 @@ const Params = () => {
             <h2>
                 Nome: {name}
             </h2>
-            <Link href="/rotas">
+            <Link passHref="/rotas">
                 <button>
                     voltar
                 </button>

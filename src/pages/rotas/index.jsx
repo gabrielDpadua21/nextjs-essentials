@@ -27,21 +27,21 @@ const Rotas = () => {
             </h1>
             <ul>
                 <li>
-                    <Link href="/rotas/params?id=1&name=frajola">
+                    <Link passHref="/rotas/params?id=1&name=frajola">
                         <button>
                             Params
                         </button>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/rotas/1/search">
+                    <Link passHref="/rotas/1/search">
                         <button>
                             Search
                         </button>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/rotas/1/frajola">
+                    <Link passHref="/rotas/1/frajola">
                         <button>
                             User
                         </button>

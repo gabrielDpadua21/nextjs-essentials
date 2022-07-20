@@ -1,4 +1,4 @@
-export default (req, res) => {
+export default api = (req, res) => {
     res.status(200).json({
         metodo: req.method
     });
