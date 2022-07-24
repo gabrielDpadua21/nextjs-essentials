@@ -8,11 +8,10 @@ const Question = () => {
     const [question, setQuestion] = useState(null)
 
     useEffect(() => {
-        console.log(id);
         fetch(`http://localhost:3000/api/question/${id}`)
         .then(response => response.json())
         .then(setQuestion)
-    }, [])
+    }, [id])
 
     const renderResponses = () => {
         if(!question) return false;
