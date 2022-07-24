@@ -1,9 +1,14 @@
 import { useState } from 'react';
 
+interface User {
+    name: string,
+    age: number
+}
+
 const Form = () => {
 
-    const [name, setName] = useState("")
-    const [age, setAge] = useState(0)
+    const [name, setName] = useState<string>("")
+    const [age, setAge] = useState<number>(0)
     const [users, setUsers] = useState([])
 
     const saveUser = async () => {
@@ -17,7 +22,7 @@ const Form = () => {
     }
 
     const renderUsers = () => {
-        return users.map((user, i) => {
+        return users.map((user: User, i: number) => {
             return <li key={i}>{user.name} - {user.age}</li>
         })
     }
