@@ -6,11 +6,11 @@ const Rotas = () => {
 
     const router = useRouter();
 
-    const navigation = (url) => {
+    const navigation = (url: string) => {
         router.push(url);
     }
 
-    const navigationParams = (url, id, name) => {
+    const navigationParams = (url: string, id: number, name: string) => {
         router.push({
             pathname: url,
             query: {
